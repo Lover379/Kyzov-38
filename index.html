@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kuzov-38 — кузовной ремонт, покраска и детейлинг автомобилей в Иркутске. Опытные мастера, профессиональное оборудование, сжатые сроки и честные цены с гарантией качества."
+    />
+    <title>Kuzov-38 — Кузовной ремонт, покраска и детейлинг авто в Иркутске</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__mark">
+        <span class="preloader__logo">Kuzov<span>-38</span></span>
+        <div class="preloader__bar"><span></span></div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#home" class="logo" aria-label="Kuzov-38 — на главную">
+          <img class="logo__img" src="/images/logo.png" alt="Логотип Kuzov-38" />
+          <span class="logo__text">Kuzov<span>-38</span></span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link is-active">Главная</a></li>
+            <li><a href="#about" class="nav__link">О нас</a></li>
+            <li><a href="#service" class="nav__link">Преимущества</a></li>
+            <li><a href="#prices" class="nav__link">Цены</a></li>
+            <li><a href="#portfolio" class="nav__link">Наши работы</a></li>
+            <li><a href="#resume" class="nav__link">Услуги</a></li>
+            <li><a href="#blog" class="nav__link">Новости</a></li>
+            <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+          <a href="tel:+79642666555" class="nav__call">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Позвонить
+          </a>
+        </nav>
+
+        <a href="tel:+79642666555" class="header__cta btn btn--primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="header__cta-text">+7 964 266-65-55</span>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero__bg" style="background-image: url('/images/bg.jpg')"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__content">
+
+          <h1 class="hero__title reveal">
+            Кузовной ремонт<br />
+            и покраска авто<br />
+            <span class="hero__rotator">
+              <span class="hero__rotator-track" id="rotator">
+                <span>СЖАТЫЕ СРОКИ</span>
+                <span>НИЗКИЕ ЦЕНЫ</span>
+                <span>ГАРАНТИЯ КАЧЕСТВА</span>
+              </span>
+            </span>
+          </h1>
+
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--primary btn--lg">Записаться на осмотр</a>
+            <a href="#portfolio" class="btn btn--ghost btn--lg">Смотреть работы</a>
+          </div>
+
+          <ul class="hero__info reveal">
+            <li>
+              <span class="hero__info-label">Адрес</span>
+              <span class="hero__info-value">Иркутск, Набережная Иркута, 30Б</span>
+            </li>
+            <li>
+              <span class="hero__info-label">Телефон</span>
+              <a class="hero__info-value" href="tel:+79642666555">+7 964 266-65-55</a>
+            </li>
+            <li>
+              <span class="hero__info-label">Почта</span>
+              <a class="hero__info-value" href="mailto:info@kuzov-38.ru">info@kuzov-38.ru</a>
+            </li>
+            <li>
+              <span class="hero__info-label">График</span>
+              <span class="hero__info-value">Пн–Вс, 9:00–21:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">О нас</span>
+            <h2 class="section__title">Сервис кузовного ремонта</h2>
+            <p class="section__lead">Качественные услуги для Вашего автомобиля</p>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__media reveal">
+              <div class="about__img-wrap">
+                <img src="/images/profile-pic.jpg" alt="Автосервис Kuzov-38" loading="lazy" />
+                <div class="about__badge">
+                  <span class="about__badge-num" data-count="10" data-suffix="+">0</span>
+                  <span class="about__badge-label">лет опыта</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__text reveal">
+              <h3>Кузовной ремонт и покраска автомобиля</h3>
+              <p>
+                Хотите избавиться от царапин, сколов или вмятин на автомобиле —
+                обратитесь в <strong>«Kuzov-38»</strong>. Также Вы можете доверить
+                нам реставрацию автомобиля или подготовку ТС к продаже. Большой
+                опыт позволяет решать задачи любой сложности.
+              </p>
+              <p>
+                Наши усилия сосредоточены на постоянном оттачивании навыков и
+                совершенствовании технологий кузовного ремонта и покраски.
+                Работаем только проверенными высококачественными материалами.
+                Гарантируем исключительное качество работ и низкие цены.
+              </p>
+
+              <ul class="about__check">
+                <li>Ремонт любой сложности — от царапины до стапеля</li>
+                <li>Компьютерный подбор цвета и колеровка</li>
+                <li>Гарантия на все виды работ</li>
+              </ul>
+
+              <div class="skills">
+                <div class="skill" data-value="99">
+                  <div class="skill__top"><span>Сложность работ</span><span class="skill__pct">99%</span></div>
+                  <div class="skill__bar"><span></span></div>
+                </div>
+                <div class="skill" data-value="99">
+                  <div class="skill__top"><span>Скорость работы</span><span class="skill__pct">99%</span></div>
+                  <div class="skill__bar"><span></span></div>
+                </div>
+                <div class="skill" data-value="100">
+                  <div class="skill__top"><span>Гарантия на работу</span><span class="skill__pct">100%</span></div>
+                  <div class="skill__bar"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADVANTAGES -->
+      <section id="service" class="section service">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">Преимущества</span>
+            <h2 class="section__title">Преимущества для Вас</h2>
+            <p class="section__lead">
+              Верните автомобилю прежнюю красоту и защитите его от внешних
+              факторов. Убедитесь в безупречном качестве и высоком уровне сервиса.
+            </p>
+          </div>
+
+          <div class="service__grid">
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <h3 class="card__title">Эстетика</h3>
+              <p class="card__text">Верните автомобилю привлекательный вид — он снова будет вызывать восхищение окружающих.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+              </div>
+              <h3 class="card__title">Рост стоимости</h3>
+              <p class="card__text">Качественный кузовной ремонт и покраска увеличивают рыночную стоимость Вашего автомобиля.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h3 class="card__title">Эмоциональный комфорт</h3>
+              <p class="card__text">Радость от автомобиля, который вновь выглядит как новый, повышает уверенность на дороге.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3 class="card__title">Безопасность</h3>
+              <p class="card__text">Восстановленный кузов — это не только эстетика, но и безопасность. Устраняем все скрытые проблемы.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+              </div>
+              <h3 class="card__title">Долговечность</h3>
+              <p class="card__text">Защитим автомобиль от коррозии и повреждений, увеличивая срок его службы.</p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 class="card__title">Экономия времени и денег</h3>
+              <p class="card__text">Скорость и качество: наши услуги помогут избежать дорогостоящих ремонтов в будущем.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICES / COUNTERS -->
+      <section id="prices" class="section prices">
+        <div class="prices__bg" style="background-image: url('/images/counter-bg.jpg')"></div>
+        <div class="prices__overlay"></div>
+        <div class="container prices__content">
+          <div class="section__head section__head--light reveal">
+            <span class="section__tag">Прайс</span>
+            <h2 class="section__title">Цены на популярные услуги</h2>
+            <p class="section__lead">Окончательная стоимость определяется после осмотра автомобиля специалистом.</p>
+          </div>
+
+          <div class="prices__grid">
+            <div class="price reveal">
+              <span class="price__currency">от</span>
+              <span class="price__num"><span data-count="5000">0</span></span>
+              <span class="price__unit">₽</span>
+              <h3 class="price__title">Кузовной ремонт</h3>
+            </div>
+            <div class="price reveal">
+              <span class="price__currency">от</span>
+              <span class="price__num"><span data-count="12000">0</span></span>
+              <span class="price__unit">₽</span>
+              <h3 class="price__title">Полировка авто целиком</h3>
+            </div>
+            <div class="price reveal">
+              <span class="price__currency">от</span>
+              <span class="price__num"><span data-count="15000">0</span></span>
+              <span class="price__unit">₽</span>
+              <h3 class="price__title">Стапельные работы</h3>
+            </div>
+            <div class="price reveal">
+              <span class="price__currency">от</span>
+              <span class="price__num"><span data-count="90000">0</span></span>
+              <span class="price__unit">₽</span>
+              <h3 class="price__title">Полный окрас авто</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">Портфолио</span>
+            <h2 class="section__title">Наши работы</h2>
+            <p class="section__lead">
+              Полная и подетальная покраска, локальное восстановление ЛКП, ремонт
+              кузова любых марок. Работаем по договору с физическими и юридическими
+              лицами. Гарантия на все виды работ.
+            </p>
+          </div>
+
+          <div class="filters reveal" id="filters">
+            <button class="filter is-active" data-filter="all">Все</button>
+            <button class="filter" data-filter="body">Ремонт кузова</button>
+            <button class="filter" data-filter="restore">Восстановление</button>
+            <button class="filter" data-filter="local">Локальный ремонт</button>
+            <button class="filter" data-filter="paint">Покраска</button>
+            <button class="filter" data-filter="metal">Пороги и арки</button>
+          </div>
+
+          <div class="portfolio__grid" id="portfolioGrid">
+            <figure class="work reveal" data-cat="restore paint body">
+              <div class="work__media"><img src="/images/portfolio/okras_stapel.jpg" alt="Восстановление геометрии кузова и покраска" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Кузовной ремонт</h3>
+                <p>Восстановление · Покраска</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="paint body">
+              <div class="work__media"><img src="/images/portfolio/localbodyrepair.jpg" alt="Покраска автомобиля" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Покраска авто</h3>
+                <p>Ремонт · Окрас</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="local paint">
+              <div class="work__media"><img src="/images/portfolio/remont24thetime.jpg" alt="Локальная покраска автомобиля" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Локальный окрас</h3>
+                <p>Рихтовка · Покраска</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="body paint">
+              <div class="work__media"><img src="/images/portfolio/vosstanovlenie.jpg" alt="Покраска детали авто" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Покраска деталей</h3>
+                <p>Замена деталей · Покраска</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="restore paint metal">
+              <div class="work__media"><img src="/images/portfolio/remont_krilo.jpg" alt="Ремонт крыла автомобиля" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Ремонт крыла</h3>
+                <p>Восстановление · Окрас</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="local paint">
+              <div class="work__media"><img src="/images/portfolio/pokras_kapot.jpg" alt="Покраска капота автомобиля" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Покраска капота</h3>
+                <p>Ремонт · Окрас</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="body restore paint">
+              <div class="work__media"><img src="/images/portfolio/okras_krilo.jpg" alt="Ремонт и покраска кузова автомобиля" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Ремонт кузова</h3>
+                <p>Изготовление · Покраска</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="metal body">
+              <div class="work__media"><img src="/images/portfolio/porog_krilo.jpg" alt="Изготовление и замена порогов и арок" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Пороги — Арки</h3>
+                <p>Изготовление · Замена</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work reveal" data-cat="local paint">
+              <div class="work__media"><img src="/images/portfolio/okras_local.jpg" alt="Локальная подготовка и покраска детали" loading="lazy" /></div>
+              <figcaption class="work__cap">
+                <h3>Локальный окрас</h3>
+                <p>Подготовка · Покраска</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES / RESUME -->
+      <section id="resume" class="section resume">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">Услуги</span>
+            <h2 class="section__title">Что мы предлагаем?</h2>
+            <p class="section__lead">
+              Ремонт и покраска авто любой сложности. Стоимость зависит от состояния
+              ЛКП и объёма работ — окончательная цена определяется после осмотра.
+            </p>
+          </div>
+
+          <div class="resume__grid">
+            <div class="resume__col reveal">
+              <h3 class="resume__col-title">
+                <span class="resume__dot"></span> Кузовной ремонт
+              </h3>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Замена деталей кузова</h4>
+                <p>Локальный ремонт и устранение небольших поверхностных дефектов кузова.</p>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Сварочные работы</h4>
+                <p>Средний ремонт кузова после аварии или серьёзного силового воздействия. Рихтовка может сопровождаться сваркой либо заменой деталей.</p>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Восстановление геометрии кузова</h4>
+                <p>Капитальный ремонт при нарушении геометрии. Восстановительные работы на специальном оборудовании сохраняют ходовые качества и управляемость автомобиля.</p>
+              </article>
+            </div>
+
+            <div class="resume__col reveal">
+              <h3 class="resume__col-title">
+                <span class="resume__dot"></span> Покраска авто
+              </h3>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Локальный окрас авто</h4>
+                <p>Быстро и качественно устраним незначительные царапины и вмятины с минимальным вмешательством в общий вид. Экономично и эффективно.</p>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Подетальный окрас авто</h4>
+                <p>Точно подберём оттенок, чтобы автомобиль выглядел как новенький. Идеально, чтобы освежить отдельные элементы кузова.</p>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__bullet"></span>
+                <h4>Полный окрас автомобиля</h4>
+                <p>Используем только высококачественные автоэмали, которые защитят кузов от коррозии и придадут автомобилю свежий, эффектный вид.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">Контакты</span>
+            <h2 class="section__title">Оставьте заявку</h2>
+            <p class="section__lead">Свяжитесь с нами сегодня и получите бесплатную консультацию.</p>
+          </div>
+
+          <div class="contact__grid">
+            <form class="contact__form reveal" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <input type="text" id="name" name="name" required placeholder=" " />
+                  <label for="name">Ваше имя</label>
+                </div>
+                <div class="field">
+                  <input type="tel" id="phone" name="phone" required placeholder=" " />
+                  <label for="phone">Телефон</label>
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" id="subject" name="subject" placeholder=" " />
+                <label for="subject">Что нужно сделать?</label>
+              </div>
+              <div class="field">
+                <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+                <label for="message">Комментарий</label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Отправить заявку</button>
+              <p class="form__note">Нажимая кнопку, Вы соглашаетесь на обработку персональных данных.</p>
+              <p class="form__success" id="formSuccess">Спасибо! Мы свяжемся с Вами в ближайшее время.</p>
+            </form>
+
+            <aside class="contact__info reveal">
+              <a class="info-card" href="tel:+79642666555">
+                <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <div><span class="info-card__label">Телефон</span><span class="info-card__value">+7 964 266-65-55</span></div>
+              </a>
+
+              <a class="info-card" href="mailto:info@kuzov-38.ru">
+                <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                <div><span class="info-card__label">Почта</span><span class="info-card__value">info@kuzov-38.ru</span></div>
+              </a>
+
+              <div class="info-card">
+                <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div><span class="info-card__label">Адрес</span><span class="info-card__value">664005, Иркутск, Набережная Иркута, 30Б</span></div>
+              </div>
+
+              <div class="info-card">
+                <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <div><span class="info-card__label">График работы</span><span class="info-card__value">Пн–Вс, с 9:00 до 21:00</span></div>
+              </div>
+
+              <div class="contact__socials">
+                <a href="https://t.me/kuzov38_ru" target="_blank" rel="noopener" class="social" aria-label="Telegram">TG</a>
+                <a href="https://wa.me/+79149159666" target="_blank" rel="noopener" class="social" aria-label="WhatsApp">WA</a>
+                <a href="mailto:kuzov-38@yandex.ru" class="social" aria-label="Email">EM</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#home" class="logo">
+            <img class="logo__img" src="/images/logo.png" alt="Логотип Kuzov-38" />
+            <span class="logo__text">Kuzov<span>-38</span></span>
+          </a>
+          <p>Кузовной ремонт, покраска и детейлинг автомобилей в Иркутске.</p>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#about">О нас</a>
+          <a href="#service">Преимущества</a>
+          <a href="#prices">Цены</a>
+          <a href="#portfolio">Наши работы</a>
+          <a href="#resume">Услуги</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <div class="footer__contacts">
+          <a href="tel:+79642666555">+7 964 266-65-55</a>
+          <a href="mailto:info@kuzov-38.ru">info@kuzov-38.ru</a>
+          <div class="footer__socials">
+            <a href="https://t.me/kuzov38_ru" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/+79149159666" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© 2025 Kuzov-38. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="to-top" id="toTop" aria-label="Наверх">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">&#8249;</button>
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">&#8250;</button>
+      <div class="lightbox__counter" id="lightboxCounter"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

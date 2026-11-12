@@ -1,0 +1,15 @@
+{
+  "name": "kysov-38",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Современный одностраничный сайт сервиса кузовного ремонта и детейлинга Kuzov-38 (Иркутск)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
